@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+    This plugin prevents the ProcessTreeKiller from reaping Gradle Daemons.
+</div>

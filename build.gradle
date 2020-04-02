@@ -1,0 +1,32 @@
+plugins {
+  id "org.jenkins-ci.jpi" version "0.38.0"
+  id "com.cinnober.gradle.semver-git" version "2.5.0"
+  id "java"
+}
+
+group = "org.gradlecommunity.jenkins.daemon"
+description = "Prevent ProcessTreeKiller from reaping Gradle daemons"
+
+jenkinsPlugin {
+    coreVersion = "1.619"
+    displayName = "Gradle Daemon saver"
+    url = "https://github.com/gradle-community/jenkins-gradle-daemon"
+    gitHubUrl = "https://github.com/gradle-community/jenkins-gradle-daemon"
+    shortName = "jenkins-gradle-daemon"
+
+    developers {
+        developer {
+            id "deepy"
+            name "Alex Nordlund"
+            email "deep.alexander@gmail.com"
+        }
+    }
+
+    licenses {
+        license {
+            name 'MIT license'
+            url 'https://github.com/gradle-community/jenkins-gradle-daemon/blob/master/LICENSE'
+            distribution 'repo'
+        }
+    }
+}
