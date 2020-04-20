@@ -4,15 +4,15 @@ plugins {
   id "java"
 }
 
-group = "org.gradlecommunity.jenkins.daemon"
+group = "org.jenkins-ci.plugins"
 description = "Prevent ProcessTreeKiller from reaping Gradle daemons"
 
 jenkinsPlugin {
-    coreVersion = "1.619"
+    coreVersion = "2.11"
     displayName = "Gradle Daemon saver"
     url = "https://github.com/gradle-community/jenkins-gradle-daemon"
     gitHubUrl = "https://github.com/gradle-community/jenkins-gradle-daemon"
-    shortName = "jenkins-gradle-daemon"
+    shortName = "gradle-daemon"
 
     developers {
         developer {
